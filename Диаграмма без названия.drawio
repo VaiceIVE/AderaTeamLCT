@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2023-03-23T06:44:09.080Z" agent="5.0 (X11)" version="21.0.10" etag="zz1id5-JX0t7capRosS7" type="github"><diagram name="Страница 1" id="NeQOH8K2c-Xhcixr0n2H">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-23T07:09:21.165Z" agent="5.0 (X11)" etag="sh6xIhl-TFY6xxywOxjC" version="21.0.10" type="github">
+  <diagram name="Страница 1" id="NeQOH8K2c-Xhcixr0n2H">
+    <mxGraphModel dx="1434" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5D52BICuaR671ftSYA4b-7" value="Реактовый фронт" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="200" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-9" value="Видеоплеер видосов с сервера" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-7">
+          <mxGeometry y="60" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-10" value="Загрузгка новых видосов файлами" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-7">
+          <mxGeometry y="140" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-11" value="Каталог видео с сервиса в целом" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-7">
+          <mxGeometry y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-12" value="Бэкенд нода" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="200" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-13" value="База со всеми видосами" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-12">
+          <mxGeometry y="60" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="5D52BICuaR671ftSYA4b-12" source="5D52BICuaR671ftSYA4b-15" target="5D52BICuaR671ftSYA4b-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-15" value="Парсинг существующих сайтов с тифлокомментариями" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-12">
+          <mxGeometry y="140" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5D52BICuaR671ftSYA4b-9" target="5D52BICuaR671ftSYA4b-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5D52BICuaR671ftSYA4b-10" target="5D52BICuaR671ftSYA4b-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5D52BICuaR671ftSYA4b-11" target="5D52BICuaR671ftSYA4b-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-20" value="Бэкенд питон" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="170" width="200" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-21" value="Анализ кадров с выведением текста о происходящем" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="5D52BICuaR671ftSYA4b-20">
+          <mxGeometry y="60" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5D52BICuaR671ftSYA4b-14" target="5D52BICuaR671ftSYA4b-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-14" value="Механика озвучки текста и наложения его на видео со сведением таймингов" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="390" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5D52BICuaR671ftSYA4b-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5D52BICuaR671ftSYA4b-21" target="5D52BICuaR671ftSYA4b-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
